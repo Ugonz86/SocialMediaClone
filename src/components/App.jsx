@@ -1,12 +1,20 @@
 import React from "react";
-import TicketList from "./TicketList";
-import Header from "./Header";
+import NavBar from "./NavBar";
+import Body from "./Body";
+
 
 function App(){
+  var appStyling =
+  {
+    color: "blue",
+    borderTop: "2px solid grey",
+    margin: "30px 0px"
+  }
     return (
       <div>
-        <Header/>
-        <TicketList/>
+        <NavBar/>
+        <hr style={appStyling}/>
+        <Body/>
       </div>
     );
   }

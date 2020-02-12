@@ -39,13 +39,13 @@ module.exports = {
           presets: [
             ["es2015", {"modules": false}],
             "react",
-          ],
+          ], 
           plugins: [
             "react-hot-loader/babel"
           ]
         }
       }
-    ],
+    ]
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -53,7 +53,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Help Queue',
+      title: 'social media clone',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
